@@ -193,14 +193,14 @@ st.sidebar.text("Advanced Settings")
 time_limit = st.sidebar.number_input(
     "Time Limit for Solver to Improve Solution",
     min_value=0,
-    value=300,
+    value=30,
     help="Maximum time in seconds for solver to search for improved solution before terminates (Advanced Setting)",
 )
 
 epsilon_stable = st.sidebar.number_input(
     "Minimum required Improvement between Iterations ($)",
     min_value=0,
-    value=10000,
+    value=100,
     help="The solver will terminate after an iteration if it does not improve the total cost by more than this amount (Advanced Setting)",
 )
 
